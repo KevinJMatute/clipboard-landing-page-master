@@ -75,6 +75,7 @@ p {
 /************** header styles *********/
 .header {
   min-height: 100vh;
+  margin-bottom: 1rem;
 }
 .header__img {
   margin-bottom: 3rem;

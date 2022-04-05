@@ -1,0 +1,143 @@
+* {
+  box-sizing: border-box;
+}
+:root {
+  --primary-cyan: hsl(171, 66%, 44%);
+  --primary-blue: hsl(233, 100%, 69%);
+  --neutral-dark-blue: hsl(210, 10%, 33%);
+  --neutral-g-blue: hsl(201, 11%, 66%);
+}
+/********* general styles ***********/
+body {
+  margin: 0;
+  padding-top: 8rem;
+  text-align: center;
+  font-family: "Bai Jamjuree", sans-serif;
+  background-image: url(images/bg-header-mobile.png);
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+img {
+  max-width: 100%;
+}
+h1,
+h2,
+p {
+  margin: 0;
+}
+.header,
+.track,
+.access,
+.workflow,
+.collaboration,
+.clipboard {
+  max-width: 80%;
+  margin-left: auto;
+  margin-right: auto;
+}
+.sub-title {
+  width: 15ch;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 1.8rem;
+  font-size: 1.8rem;
+  color: var(--neutral-dark-blue);
+}
+.paragraph {
+  font-size: 18px;
+  line-height: 1.7;
+  margin-bottom: 4rem;
+  color: var(--neutral-g-blue);
+}
+.download-button {
+  width: 90%;
+  padding: 1rem;
+  font-size: 1.2rem;
+  font-weight: 600;
+  border: none;
+  border-radius: 2rem;
+  margin-bottom: 1.5rem;
+  box-shadow: 0px 2px 2px 3px gray, 0px 0px 20px rgba(0, 0, 0, 0.288);
+  cursor: pointer;
+  color: white;
+  background-color: var(--primary-cyan);
+  transition: all 0.1s ease-out;
+}
+.download-button:active {
+  transform: scale(0.98);
+  box-shadow: 0 0 10px 5px var(--neutral-g-blue),
+    inset 0 0 10px 1px gray;
+}
+
+.devices-img {
+  margin-bottom: 5rem;
+}
+/************** header styles *********/
+.header {
+  min-height: 100vh;
+}
+.header__img {
+  margin-bottom: 3rem;
+}
+.header__title {
+  margin-bottom: 2rem;
+  color: var(--neutral-dark-blue);
+}
+.download-button--mac {
+  margin-bottom: 0rem;
+  background-color: var(--primary-blue);
+}
+/************** track styles ************/
+.track__img {
+  margin-bottom: 3.5rem;
+}
+.track__box {
+  margin-bottom: 12rem;
+}
+/******* workflow styles**********/
+.workflow__icon {
+  margin-bottom: 2rem;
+}
+/*************** collaboration logos style ******/
+.collaboration__img {
+  display: block;
+  margin: 0 auto 3.5rem;
+}
+.collaboration__img--margin-b {
+  margin-bottom: 10rem;
+}
+
+/************ clipboard styles *******/
+.download-button--margin-b {
+  margin-bottom: 10rem;
+}
+/************** footer styles *************/
+footer {
+  padding-top: 3rem;
+  background-color: var(--neutral-g-blue);
+}
+.footer__logo {
+  width: 5rem;
+  margin-bottom: 3rem;
+}
+.footer__box a {
+  display: block;
+  margin-bottom: 2rem;
+  font-size: 1.2rem;
+  text-decoration: none;
+  color: var(--neutral-dark-blue);
+  transition: transform 0.15s ease-in;
+}
+.footer__box a:active,
+.social__item img:active {
+  transform: scale(1.3);
+  color: var(--primary-cyan);
+}
+.social {
+  margin-bottom: 2rem;
+}
+.social__item {
+  margin-inline: 1.5rem;
+  transform: scale(5);
+  transition: transform 0.15s ease-in;
+}

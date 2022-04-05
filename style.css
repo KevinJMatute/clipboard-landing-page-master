@@ -10,7 +10,7 @@
 /********* general styles ***********/
 body {
   margin: 0;
-  padding-top: 8rem;
+  padding-top: 20%;
   text-align: center;
   font-family: "Bai Jamjuree", sans-serif;
   background-image: url(images/bg-header-mobile.png);
@@ -65,8 +65,7 @@ p {
 }
 .download-button:active {
   transform: scale(0.98);
-  box-shadow: 0 0 10px 5px var(--neutral-g-blue),
-    inset 0 0 10px 1px gray;
+  box-shadow: 0 0 10px 5px var(--neutral-g-blue), inset 0 0 10px 1px gray;
 }
 
 .devices-img {
@@ -140,4 +139,11 @@ footer {
   margin-inline: 1.5rem;
   transform: scale(5);
   transition: transform 0.15s ease-in;
+}
+/**************** Responsive **********/
+@media screen and (min-width: 768px) {
+  .download-button {
+    width: 40%;
+    margin-inline: 1.5rem;
+  }
 }

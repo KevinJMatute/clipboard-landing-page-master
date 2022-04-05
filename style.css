@@ -10,8 +10,9 @@
 /********* general styles ***********/
 body {
   margin: 0;
-  padding-top: 20%;
+  padding-top: 15%;
   text-align: center;
+  font-size: 15px;
   font-family: "Bai Jamjuree", sans-serif;
   background-image: url(images/bg-header-mobile.png);
   background-repeat: no-repeat;
@@ -91,7 +92,7 @@ p {
   margin-bottom: 3.5rem;
 }
 .track__box {
-  margin-bottom: 12rem;
+  margin-bottom: 8rem;
 }
 /******* workflow styles**********/
 .workflow__icon {

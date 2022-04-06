@@ -37,7 +37,7 @@ p {
   margin-right: auto;
 }
 .sub-title {
-  width: 15ch;
+  max-width: 15ch;
   margin-left: auto;
   margin-right: auto;
   margin-bottom: 1.8rem;
@@ -51,7 +51,7 @@ p {
   color: var(--neutral-g-blue);
 }
 .download-button {
-  max-width: 20rem;
+  width: 80%;
   padding: 1rem;
   font-size: 1.2rem;
   font-weight: 600;
@@ -145,34 +145,59 @@ footer {
 /**************** Responsive **********/
 @media screen and (min-width: 768px) {
   body {
-    padding: 10%;
+    padding-top: 10%;
     font-size: 18px;
   }
-  
+  .sub-title {
+    max-width: 40ch;
+  }
   .download-button {
-    width: 40%;
+    max-width: 18rem;
     margin-inline: 1.5rem;
   }
   .paragraph {
     margin-left: auto;
     margin-right: auto;
-    width: 55ch;
+    max-width: 55ch;
   }
   .header {
     margin-bottom: 0;
   }
   .track__box{
-      display: flex;
+      display: grid;
+      grid-template-columns: minmax(65%, 20rem) 1fr;
       justify-content: center;
+      column-gap: 4rem;
       margin-top: 3rem;
+      
+  }
+  .track__title{
+    margin-bottom: .5rem;
   }
   .track__box__text{
-      padding-left:  7rem;
       text-align: left;
   }
   .track_paragraph{
       width: 33ch;
       margin-left: 0;
-      margin-bottom: 2rem;
+      margin-bottom: 1rem;
+  }
+  .workflow__box{
+    display: flex;
+    justify-content: space-around;
+    column-gap: 2rem;
+  }
+  .workflow__box p{
+    max-width: 34ch;
+  }
+  .collaboration{
+    margin-bottom: 5rem;
+  }
+  .collaboration img{
+    display: inline-block;
+    margin-inline: 2rem;
+  }
+  .collaboration__img--margin-b{
+    margin: inherit;
   }
 }

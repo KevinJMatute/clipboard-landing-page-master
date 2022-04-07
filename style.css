@@ -64,6 +64,9 @@ p {
   background-color: var(--primary-cyan);
   transition: all 0.2s ease-out;
 }
+.download-button--mac {
+  background-color: var(--primary-blue);
+}
 .download-button:active {
   transform: scale(0.98);
   box-shadow: 0 0 10px 5px var(--neutral-g-blue), inset 0 0 10px 1px gray;
@@ -84,10 +87,7 @@ p {
   margin-bottom: 2rem;
   color: var(--neutral-dark-blue);
 }
-.download-button--mac {
-  margin-bottom: 0rem;
-  background-color: var(--primary-blue);
-}
+
 /************** track styles ************/
 .track__img {
   margin-bottom: 3.5rem;
@@ -141,11 +141,10 @@ footer {
 }
 .social__item {
   margin-inline: 1.5rem;
-  
 }
 .social__item,
-.social__item img{
-  transition: all .1s ease-in-out;
+.social__item img {
+  transition: all 0.1s ease-in-out;
 }
 
 .front-end {
@@ -163,9 +162,15 @@ footer {
   .sub-title {
     max-width: 40ch;
   }
+  .button-box {
+    display: flex;
+    justify-content: center;
+    column-gap: 10%;
+    align-items: center;
+  }
   .download-button {
     max-width: 18rem;
-    margin-inline: 1.5rem;
+    margin: 0;
   }
   .paragraph {
     margin-left: auto;
@@ -259,11 +264,10 @@ footer {
   .social__item:hover {
     filter: invert(50%) sepia(77%) saturate(405%) hue-rotate(121deg)
       brightness(97%) contrast(90%);
-      transform: scale(2);
-      
+    transform: scale(2);
   }
   .social__item img:hover {
-    transform: scale(1.4) rotate(-.1turn);
+    transform: scale(1.4) rotate(-0.1turn);
     box-shadow: 0 0 30px white;
   }
 }

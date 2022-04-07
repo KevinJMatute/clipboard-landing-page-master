@@ -19,140 +19,143 @@
     <title>Frontend Mentor | Clipboard landing page</title>
   </head>
   <body>
-    <header class="header">
-      <img src="images/logo.svg" alt="Company logo" class="header__img" />
-      <h1 class="header__title">A history of everything you copy</h1>
-      <p class="paragraph header__description">
-        Clipboard allows you to track and organize everything you copy.
-        Instantly access your clipboard on all your devices.
-      </p>
-      <button class="download-button">Download for iOS</button>
-      <button class="download-button download-button--mac">
-        Download for Mac
-      </button>
-    </header>
-    <section class="track">
-      <h2 class="sub-title track__title">Keep track of your snippets</h2>
-      <p class="paragraph">
-        Clipboard instantly stores any item you copy in the cloud, meaning you
-        can access your snippets immediately on all your devices. Our Mac and
-        iOS apps will help you organize everything.
-      </p>
-      <div class="track__box">
+    <main>
+      <header class="header">
+        <img src="images/logo.svg" alt="Company logo" class="header__img" />
+        <h1 class="header__title">A history of everything you copy</h1>
+        <p class="paragraph header__description">
+          Clipboard allows you to track and organize everything you copy.
+          Instantly access your clipboard on all your devices.
+        </p>
+        <div class="button-box">
+          <button class="download-button">Download for iOS</button>
+          <button class="download-button download-button--mac">
+            Download for Mac
+          </button>
+        </div>
+      </header>
+      <section class="track">
+        <h2 class="sub-title track__title">Keep track of your snippets</h2>
+        <p class="paragraph">
+          Clipboard instantly stores any item you copy in the cloud, meaning you
+          can access your snippets immediately on all your devices. Our Mac and
+          iOS apps will help you organize everything.
+        </p>
+        <div class="track__box">
+          <img
+            src="images/image-computer.png"
+            alt="computer picture"
+            class="devices-img"
+          />
+          <div class="track__box__text">
+            <h2 class="sub-title track__title">Quick Search</h2>
+            <p class="paragraph track_paragraph">
+              Easily search your snippets by content, category, web address,
+              application, and more.
+            </p>
+            <h2 class="sub-title track__title">iCloud Sync</h2>
+            <p class="paragraph track_paragraph">
+              Instantly saves and syncs snippets across all your devices.
+            </p>
+            <h2 class="sub-title track__title">Complete History</h2>
+            <p class="paragraph track_paragraph track__description">
+              Retrieve any snippets from the first moment you started using the
+              app.
+            </p>
+          </div>
+        </div>
+      </section>
+      <section class="access">
+        <h2 class="sub-title access__title">Access Clipboard anywhere</h2>
+        <p class="paragraph access__description">
+          Whether you’re on the go, or at your computer, you can access all your
+          Clipboard snippets in a few simple clicks.
+        </p>
         <img
-          src="images/image-computer.png"
-          alt="computer picture"
+          src="images/image-devices.png"
+          alt="ipad and iphone picture"
           class="devices-img"
         />
-        <div class="track__box__text">
-          <h2 class="sub-title track__title">Quick Search</h2>
-          <p class="paragraph track_paragraph">
-            Easily search your snippets by content, category, web address,
-            application, and more.
-          </p>
-          <h2 class="sub-title track__title">iCloud Sync</h2>
-          <p class="paragraph track_paragraph">
-            Instantly saves and syncs snippets across all your devices.
-          </p>
-          <h2 class="sub-title track__title">Complete History</h2>
-          <p class="paragraph track_paragraph track__description">
-            Retrieve any snippets from the first moment you started using the
-            app.
-          </p>
+      </section>
+      <section class="workflow">
+        <h2 class="sub-title workflow__title">Supercharge your workflow</h2>
+        <p class="paragraph workflow__description">
+          We’ve got the tools to boost your productivity.
+        </p>
+        <div class="workflow__box">
+          <div>
+            <img
+              src="images/icon-blacklist.svg"
+              alt="Blacklist icon"
+              class="workflow__icon"
+            />
+            <h2 class="sub-title workflow__title">Create blacklists</h2>
+            <p class="paragraph workflo__description">
+              Ensure sensitive information never makes its way to your clipboard
+              by excluding certain sources.
+            </p>
+          </div>
+          <div>
+            <img
+              src="images/icon-text.svg"
+              alt="Blacklist icon"
+              class="workflow__icon"
+            />
+            <h2 class="sub-title workflow__title">Plain text snippets</h2>
+            <p class="paragraph workflo__description">
+              Remove unwanted formatting from copied text for a consistent look.
+            </p>
+          </div>
+          <div>
+            <img
+              src="images/icon-preview.svg"
+              alt="Blacklist icon"
+              class="workflow__icon"
+            />
+            <h2 class="sub-title workflow__title">Sneak preview</h2>
+            <p class="paragraph workflo__description">
+              Quick preview of all snippets on your Clipboard for easy access.
+            </p>
+          </div>
         </div>
-      </div>
-    </section>
-    <section class="access">
-      <h2 class="sub-title access__title">Access Clipboard anywhere</h2>
-      <p class="paragraph access__description">
-        Whether you’re on the go, or at your computer, you can access all your
-        Clipboard snippets in a few simple clicks.
-      </p>
-      <img
-        src="images/image-devices.png"
-        alt="ipad and iphone picture"
-        class="devices-img"
-      />
-    </section>
-    <section class="workflow">
-      <h2 class="sub-title workflow__title">Supercharge your workflow</h2>
-      <p class="paragraph workflow__description">
-        We’ve got the tools to boost your productivity.
-      </p>
-      <div class="workflow__box">
-        <div>
-          <img
-            src="images/icon-blacklist.svg"
-            alt="Blacklist icon"
-            class="workflow__icon"
-          />
-          <h2 class="sub-title workflow__title">Create blacklists</h2>
-          <p class="paragraph workflo__description">
-            Ensure sensitive information never makes its way to your clipboard
-            by excluding certain sources.
-          </p>
+      </section>
+      <article class="collaboration">
+        <img
+          src="images/logo-google.png"
+          alt="Google logo"
+          class="collaboration__img"
+        /><img
+          src="images/logo-ibm.png"
+          alt="Ibm logo"
+          class="collaboration__img"
+        /><img
+          src="images/logo-microsoft.png"
+          alt="Microsoft logo"
+          class="collaboration__img"
+        /><img
+          src="images/logo-hp.png"
+          alt="Hewlett Packard logo"
+          class="collaboration__img"
+        /><img
+          src="images/logo-vector-graphics.png"
+          alt="Vector Graphics logo"
+          class="collaboration__img collaboration__img--margin-b"
+        />
+      </article>
+      <section class="clipboard">
+        <h2 class="sub-title clipboard_title">Clipboard for iOS and Mac OS</h2>
+        <p class="paragraph clipboard__description">
+          Available for free on the App Store. Download for Mac or iOS, sync
+          with iCloud and you’re ready to start adding to your clipboard.
+        </p>
+        <div class="button-box download-button--margin-b">
+          <button class="download-button">Download for iOS</button>
+          <button class="download-button download-button--mac">
+            Download for Mac
+          </button>
         </div>
-        <div>
-          <img
-            src="images/icon-text.svg"
-            alt="Blacklist icon"
-            class="workflow__icon"
-          />
-          <h2 class="sub-title workflow__title">Plain text snippets</h2>
-          <p class="paragraph workflo__description">
-            Remove unwanted formatting from copied text for a consistent look.
-          </p>
-        </div>
-        <div>
-          <img
-            src="images/icon-preview.svg"
-            alt="Blacklist icon"
-            class="workflow__icon"
-          />
-          <h2 class="sub-title workflow__title">Sneak preview</h2>
-          <p class="paragraph workflo__description">
-            Quick preview of all snippets on your Clipboard for easy access.
-          </p>
-        </div>
-      </div>
-    </section>
-    <article class="collaboration">
-      <img
-        src="images/logo-google.png"
-        alt="Google logo"
-        class="collaboration__img"
-      /><img
-        src="images/logo-ibm.png"
-        alt="Ibm logo"
-        class="collaboration__img"
-      /><img
-        src="images/logo-microsoft.png"
-        alt="Microsoft logo"
-        class="collaboration__img"
-      /><img
-        src="images/logo-hp.png"
-        alt="Hewlett Packard logo"
-        class="collaboration__img"
-      /><img
-        src="images/logo-vector-graphics.png"
-        alt="Vector Graphics logo"
-        class="collaboration__img collaboration__img--margin-b"
-      />
-    </article>
-    <section class="clipboard">
-      <h2 class="sub-title clipboard_title">Clipboard for iOS and Mac OS</h2>
-      <p class="paragraph clipboard__description">
-        Available for free on the App Store. Download for Mac or iOS, sync with
-        iCloud and you’re ready to start adding to your clipboard.
-      </p>
-      <button class="download-button">Download for iOS</button>
-      <button
-        class="download-button download-button--mac download-button--margin-b"
-      >
-        Download for Mac
-      </button>
-    </section>
-
+      </section>
+    </main>
     <footer>
       <img src="images/logo.svg" alt="Company logo" class="footer__logo" />
       <div class="footer__box">
